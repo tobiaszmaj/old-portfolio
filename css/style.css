@@ -170,12 +170,14 @@ nav li {
 }
 
 /* Link Styles*/
-.main-menu a:before {
+.main-menu a:before,
+.biography a:before {
     content: "";
     top: 0;
 }
 
-.main-menu a {
+.main-menu a,
+.biography a {
     -ms-user-select: none;
     padding: 10px;
     -webkit-transition: color 1s ease;
@@ -197,7 +199,9 @@ nav li {
 }
 
 .main-menu a:focus,
-.main-menu a:hover {
+.biography a:focus,
+.main-menu a:hover,
+.biography a:hover {
     -webkit-transition: color 1s ease;
     -moz-transition: color 1s ease;
     -ms-transition: color 1s ease;
@@ -209,7 +213,9 @@ nav li {
 }
 
 .main-menu a:after,
-.main-menu a:before {
+.biography a:after,
+.main-menu a:before,
+.biography a:before {
     -webkit-transition: all 1s ease 0s;
     -moz-transition: all 1s ease 0s;
     -ms-transition: all 1s ease 0s;
@@ -218,9 +224,13 @@ nav li {
 }
 
 .main-menu a:focus:after,
+.biography a:focus:after,
 .main-menu a:focus:before,
+.biography a:focus:before,
 .main-menu a:hover:after,
-.main-menu a:hover:before {
+.biography a:hover:after,
+.main-menu a:hover:before,
+.biography a:hover:before {
     outline: 0;
     background-color: #00a8e8;
     -webkit-transition: all 1s ease 0s;
@@ -230,7 +240,8 @@ nav li {
     transition: all 1s ease 0s
 }
 
-.main-menu a:before {
+.main-menu a:before,
+.biography a:before {
     position: absolute;
     z-index: -1;
     width: 3px;
@@ -239,13 +250,26 @@ nav li {
 }
 
 .main-menu a:focus:before,
-.main-menu a:hover:before {
+.biography a:focus:before,
+.main-menu a:hover:before,
+.biography a:hover:before {
     width: 100%;
     height: 100%
 }
 
 .main-menu a:hover {
     color: #000 !important
+}
+
+.biography a {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+.biography a:hover {
+    color: #fff;
 }
 
 /* Landing Section Styles */
@@ -1037,7 +1061,7 @@ footer .bottom-text-block .fa {
 
 /* Biography Styles */
 .biography {
-    margin-left: 150px;
+    margin: 100px 0 0 150px;
     height: 100vh;
 }
 
@@ -1072,4 +1096,43 @@ footer .bottom-text-block .fa {
 
 .biography p {
     margin-bottom: 10px;
+}
+
+.biography a {
+    z-index: 0;
+}
+
+/* Form Styles */
+.contact {
+    max-width: 50%;
+}
+
+.form-wrapper {
+    margin-left: 50px;
+}
+
+input {
+    font-size: 14px;
+    line-height: 25px;
+    border-radius: 3px;
+    height: 30px;
+    color: #000;
+    border-width: 1px;
+    border-color: rgba(170, 170, 170, .25);
+    background-color: #fdfdfd;
+    padding: 5px 15px;
+    border: 1px solid #e0e1e1;
+}
+
+textarea {
+    width: 370px;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #000;
+    border-width: 1px;
+    border-color: rgba(170, 170, 170, .25);
+    background-color: #fdfdfd;
+    border: 1px solid #e0e1e1;
+    overflow: auto;
+    vertical-align: top;
 }
