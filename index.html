@@ -14,8 +14,30 @@
 </head>
 
 <body>
+    <!--Preloader-->
+    <div class="preloader">
+        <div class="stage">
+            <div class="wrapper">
+                <div class="sides">
+                    <div class="side"></div>
+                    <div class="side"></div>
+                    <div class="side"></div>
+                    <div class="side"></div>
+                </div>
+                <div class="text">
+                    <div class="text--backing">Hello</div>
+                    <div class="text--left">
+                        <div class="inner">Hello</div>
+                    </div>
+                    <div class="text--right">
+                        <div class="inner">Hello</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <!--Nav-->
+    <!--Navigation-->
     <header>
         <nav class="main-menu">
             <div class="logo">
@@ -82,26 +104,34 @@
 
     <!--Landing Section-->
     <section class="landing">
-        <h1 class="home-intro-landing">
-            <span class="custom-lettering">Hello! I'm Tobiasz</span><br>
-            Junior Frontend Developer
-        </h1>
-        <div class="btn-align-center">
-            <a href="portfolio.html" class="default-btn-shortcode">
-                <span>Check Out My Portfolio</span>
-            </a>
+        <div class="fullscreen-video-wrap">
+            <video src="/assets/movie.mp4" autoplay="" loop="">
+            </video>
         </div>
-        <div class="scroll">
-            <div class="scroll-down">
-                <a href="#"></a>
+        <div class="landing-overlay"></div>
+        <div class="landing-content">
+            <h1 class="home-intro-landing">
+                <span class="custom-lettering">Hello! I'm Tobiasz</span><br>
+                Junior Frontend Developer
+            </h1>
+            <div class="btn-align-center">
+                <a href="portfolio.html" class="default-btn-shortcode">
+                    <span>Check Out My Portfolio</span>
+                </a>
             </div>
+            <div class="scroll">
+                <div class="scroll-down">
+                    <a href="#"></a>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
 
     <!--Intro Section-->
     <section class="intro">
         <div class="wrapper">
-            <h2>Lorem ipsum dolor sit amet.</h2>
+            <h2><span class="underline">Lorem</span> ipsum dolor sit <span class="underline">amet</span></h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae cum aut et est minima modi quasi,
                 laboriosam molestiae accusamus illum reprehenderit commodi accusantium optio repudiandae architecto
                 cumque dolorum voluptas! Eius!</p>
