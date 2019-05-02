@@ -634,13 +634,13 @@ nav li {
 
 /* Link Styles*/
 .main-menu a:before,
-.biography a:before {
+.info a:before {
     content: "";
     top: 0;
 }
 
 .main-menu a,
-.biography a {
+.info a {
     -ms-user-select: none;
     padding: 10px;
     -webkit-transition: color 1s ease;
@@ -662,9 +662,9 @@ nav li {
 }
 
 .main-menu a:focus,
-.biography a:focus,
+.info a:focus,
 .main-menu a:hover,
-.biography a:hover {
+.info a:hover {
     -webkit-transition: color 1s ease;
     -moz-transition: color 1s ease;
     -ms-transition: color 1s ease;
@@ -676,9 +676,9 @@ nav li {
 }
 
 .main-menu a:after,
-.biography a:after,
+.info a:after,
 .main-menu a:before,
-.biography a:before {
+.info a:before {
     -webkit-transition: all 1s ease 0s;
     -moz-transition: all 1s ease 0s;
     -ms-transition: all 1s ease 0s;
@@ -687,13 +687,13 @@ nav li {
 }
 
 .main-menu a:focus:after,
-.biography a:focus:after,
+.info a:focus:after,
 .main-menu a:focus:before,
-.biography a:focus:before,
+.info a:focus:before,
 .main-menu a:hover:after,
-.biography a:hover:after,
+.info a:hover:after,
 .main-menu a:hover:before,
-.biography a:hover:before {
+.info a:hover:before {
     outline: 0;
     background-color: #00a8e8;
     -webkit-transition: all 1s ease 0s;
@@ -704,7 +704,7 @@ nav li {
 }
 
 .main-menu a:before,
-.biography a:before {
+.info a:before {
     position: absolute;
     z-index: -1;
     width: 3px;
@@ -713,9 +713,9 @@ nav li {
 }
 
 .main-menu a:focus:before,
-.biography a:focus:before,
+.info a:focus:before,
 .main-menu a:hover:before,
-.biography a:hover:before {
+.info a:hover:before {
     width: 100%;
     height: 100%
 }
@@ -724,14 +724,14 @@ nav li {
     color: #000 !important
 }
 
-.biography a {
+.info a {
     text-decoration: none;
     margin: 0;
     padding: 0;
     color: #fff;
 }
 
-.biography a:hover {
+.info a:hover {
     color: #fff;
 }
 
@@ -1413,6 +1413,24 @@ nav li {
 }
 
 /* Portfolio Section */
+.single-project-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.slide {
+    background: rgba(0, 0, 0, .5);
+    position: absolute;
+    left: -100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.single-project-container:hover .slide {
+    transition: 0.5s;
+    left: 90px;
+}
+
 .single-project-container a {
     width: 100%;
     height: 33vh;
@@ -1429,6 +1447,8 @@ nav li {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     flex-flow: column wrap;
+    -webkit-transition: .5s ease all;
+    transition: .5s ease all;
 }
 
 .single-project-container a h4 {
@@ -1446,7 +1466,6 @@ nav li {
 }
 
 .single-project-container:hover a h4 {
-    color: #fff;
     padding-left: 18vw;
 }
 
@@ -1462,8 +1481,8 @@ nav li {
 }
 
 .single-project-container:hover a p {
-    color: rgba(255, 255, 255, .8);
     padding-left: 18vw;
+    color: #fff;
 }
 
 .single-project-container a .fa {
@@ -1559,13 +1578,13 @@ footer .bottom-text-block .fa {
     top: 0;
 }
 
-/* Biography Styles */
-.biography {
+/* Info Styles */
+.info {
     margin: 100px 0 0 150px;
     height: 100vh;
 }
 
-.biography h1 {
+.info h1 {
     color: #fff;
     font-family: finger paint;
     font-size: 50px;
@@ -1573,20 +1592,20 @@ footer .bottom-text-block .fa {
     font-weight: 500;
 }
 
-.biography .wrapper {
+.info .wrapper {
     display: flex;
 }
 
-.biography .wrapper .column-wrapper {
+.info .wrapper .column-wrapper {
     width: 60%;
 }
 
-.biography img {
+.info img {
     border-radius: 5%;
     margin: 30px 0 0 15px;
 }
 
-.biography .custom-subtitle {
+.info .custom-subtitle {
     position: relative;
     text-transform: uppercase;
     color: #fff;
@@ -1594,11 +1613,11 @@ footer .bottom-text-block .fa {
     font-weight: 700;
 }
 
-.biography p {
+.info p {
     margin-bottom: 10px;
 }
 
-.biography a {
+.info a {
     z-index: 0;
 }
 
@@ -1652,4 +1671,52 @@ input[type="submit"] {
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 5px;
+}
+
+/* Project Styles */
+.projects {
+    margin-left: 150px;
+}
+
+.projects-heading {
+    padding: 100px 0 100px;
+}
+
+.projects h1.portfolio {
+    font: normal 800 44px/54px "Montserrat", Helvetica, Arial, Verdana, sans-serif;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.projects p.portfolio {
+    font: normal 400 26px/36px "Montserrat", Helvetica, Arial, Verdana, sans-serif;
+    color: #6a6b6f;
+}
+
+.big-picture {
+    padding-bottom: 100px;
+}
+
+.big-picture img {
+    border-radius: 0;
+    width: 83vw;
+    height: 90vh;
+}
+
+.gallery {
+    margin-left: -60px;
+    padding-bottom: 100px;
+    height: 300px;
+    width: 100vw;
+    display: flex;
+}
+
+.gallery img {
+    width: 420px;
+}
+
+.projects .btn-align-center {
+    padding-bottom: 100px;
+    margin-left: -150px;
 }
