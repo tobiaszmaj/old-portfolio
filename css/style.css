@@ -1721,6 +1721,22 @@ input[type="submit"] {
     margin-left: -150px;
 }
 
+.m6 {
+    background-image: url(../img/mockups/weatherApp-mockup.png);
+}
+
+.m7 {
+    background-image: url(../img/mockups/breaking-bad-mockup.png);
+}
+
+.m8 {
+    background-image: url(../img/mockups/form-mockup.png);
+}
+
+.m9 {
+    background-image: url(../img/mockups/nuno-mockup.png);
+}
+
 .m10 {
     background-image: url(../img/mockups/solufix-mockup.png);
 }
