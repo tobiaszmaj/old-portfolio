@@ -1597,7 +1597,8 @@ footer .bottom-text-block .fa {
 }
 
 .info .wrapper .column-wrapper {
-    width: 60%;
+    width: 55%;
+    padding-right: 50px;
 }
 
 .info img {
@@ -1653,10 +1654,8 @@ footer .bottom-text-block .fa {
 }
 
 .inputBox input:focus~label,
-.inputBox input:valid~label,
-.inputBox textarea:focus~label,
-.inputBox textarea:valid~label {
-    top: -18px;
+.inputBox textarea:focus~label {
+    top: -25px;
     left: 0;
     color: #03a9f4;
     font-size: 12px;
@@ -1721,6 +1720,10 @@ input[type="submit"] {
     margin-left: -150px;
 }
 
+.m5 {
+    background-image: url(../img/mockups/todo-mockup.png);
+}
+
 .m6 {
     background-image: url(../img/mockups/weatherApp-mockup.png);
 }
@@ -1768,4 +1771,144 @@ input[type="submit"] {
     height: 36px;
     padding-left: 10px;
     margin-bottom: -5px;
+}
+
+/* Chart Styles */
+
+.bar-wrapper {
+    margin: -35px auto;
+}
+
+.bar-wrapper img {
+    height: 30px;
+}
+
+.progress-bar {
+    position: relative;
+    border: #ccc solid 1px;
+    width: 200px;
+    height: 20px;
+    line-height: 20px;
+    top: -35px;
+    vertical-align: middle;
+    overflow: hidden;
+    margin: auto 75px;
+    font-family: arial, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    box-shadow: 0 4px 10px -5px rgba(0, 0, 0, 0.25);
+}
+
+.progress-bar .bar {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.progress-bar .bar span {
+    position: absolute;
+    display: block;
+    width: 200px;
+    height: 100%;
+    text-align: center;
+}
+
+.progress-bar .bar.positive {
+    left: 0;
+    -webkit-animation: animate-positive 4s 4s;
+    animation: animate-positive 4s 4s;
+}
+
+.progress-bar .bar.positive.red {
+    background: #E44D26;
+    width: 80%;
+}
+
+.progress-bar .bar.positive.blue {
+    background: #1F62AE;
+    width: 60%;
+}
+
+.progress-bar .bar.positive.yellow {
+    background: #FFD600;
+    width: 25%;
+}
+
+.progress-bar .bar.positive.cyan {
+    background: cyan;
+    width: 25%;
+}
+
+.progress-bar .bar.positive.green {
+    background: #41B883;
+    width: 15%;
+}
+
+.progress-bar .bar.positive.blue2 {
+    background: #01579B;
+    width: 70%;
+}
+
+.progress-bar .bar.positive span {
+    left: 0;
+    color: #fff;
+}
+
+.progress-bar .bar.negative {
+    background: #fff;
+    right: 0;
+    width: 25%;
+    -webkit-animation: animate-negative 4s 4s;
+    animation: animate-negative 4s 4s;
+}
+
+.progress-bar .bar.negative.red {
+    width: 20%;
+}
+
+.progress-bar .bar.negative.blue {
+    width: 40%;
+}
+
+.progress-bar .bar.negative.yellow,
+.progress-bar .bar.negative.cyan {
+    width: 75%;
+}
+
+.progress-bar .bar.negative.green {
+    width: 85%;
+}
+
+.progress-bar .bar.negative.blue2 {
+    width: 30%;
+}
+
+.progress-bar .bar.negative span {
+    right: 0;
+    color: #333;
+}
+
+@-webkit-keyframes animate-positive {
+    0% {
+        width: 0%;
+    }
+}
+
+@keyframes animate-positive {
+    0% {
+        width: 0%;
+    }
+}
+
+@-webkit-keyframes animate-negative {
+    0% {
+        width: 100%;
+    }
+}
+
+@keyframes animate-negative {
+    0% {
+        width: 100%;
+    }
 }
