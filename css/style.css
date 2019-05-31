@@ -1,19 +1,26 @@
 @import url('https://fonts.googleapis.com/css?family=Finger+Paint|Montserrat:400,700|Work+Sans');
 
+/* CSS Variables */
+:root {
+    --main-dark: #1A1A1A;
+    --main-grey: #6a6b6f;
+    --main-blue: #00A8E8;
+}
+
 /* Global Styles */
 body {
     margin: 0;
     padding: 0;
     font: 15px/28px "Work Sans", Helvetica, Arial, Verdana, sans-serif;
     word-spacing: normal;
-    color: #6a6b6f;
-    background: #1A1A1A;
+    color: var(--main-grey);
+    background: var(--main-dark);
     overflow-x: hidden;
 }
 
 /* Preloader Styles */
 .preloader {
-    background: #1A1A1A;
+    background: var(--main-dark);
     width: 100%;
     height: 100%;
     position: fixed;
@@ -66,7 +73,7 @@ body {
 
 .sides .side {
     position: absolute;
-    background: #00A8E8;
+    background: var(--main-blue);
 }
 
 .sides .side:nth-child(1) {
@@ -475,14 +482,17 @@ body {
 
 /* Nav Styles */
 .main-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background: #fff;
     color: #000;
     position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
-    height: 100%;
-    width: 90px;
+    height: 100vh;
+    width: 6em;
     overflow: hidden;
     -webkit-transition: width .2s linear;
     transition: width .2s linear;
@@ -495,8 +505,8 @@ body {
 
 .main-menu .logo {
     display: block;
-    width: 25px;
-    height: 25px;
+    width: 1.7em;
+    height: 1.7em;
     padding: 25px 0 0 22px;
 }
 
@@ -523,28 +533,28 @@ body {
 }
 
 .main-menu img {
-    width: 45px;
-    height: 48px;
+    width: 3em;
+    height: 3.2em;
 }
 
-.main-menu>ul {
+.main-menu ul {
     margin: 0;
 }
 
 .main-menu li {
     position: relative;
     display: block;
-    width: 250px;
+    width: 16.7em;
 }
 
 .main-menu li a {
+    font-size: 0.9em;
     position: relative;
-    width: 255px;
+    width: 18.5em;
     display: table;
     border-collapse: collapse;
     border-spacing: 0;
     color: #000;
-    font-size: 14px;
     text-decoration: none;
     -webkit-transform: translateZ(0) scale(1, 1);
     transform: translateZ(0) scale(1, 1);
@@ -557,24 +567,15 @@ body {
     position: relative;
     display: table-cell;
     vertical-align: middle;
-    width: 190px;
-    height: 48px;
+    width: 12.9em;
+    height: 3.5em;
 }
 
-.main-menu>ul.social-menu {
+.main-menu .social-menu ul {
     position: absolute;
     font-size: 12px;
     left: 0;
     bottom: 0;
-}
-
-.settings {
-    height: 100px;
-    float: left;
-    width: 250px;
-    margin: 0px;
-    text-align: center;
-    font-size: 20px;
 }
 
 /* Icons Styles */
@@ -584,18 +585,18 @@ body {
 
 .fa,
 .fab {
+    font-size: 0.9em;
+    width: 5em;
+    height: 2.4em;
     position: relative;
     display: table-cell;
-    width: 90px;
-    height: 36px;
     text-align: center;
-    top: 12px;
-    font-size: 14px;
+    top: 0.7em;
 }
 
 nav.main-menu:hover,
 nav.main-menu.expanded {
-    width: 250px;
+    width: 16.5em;
     overflow: hidden;
     opacity: 1;
 }
@@ -607,7 +608,7 @@ a:focus {
 }
 
 #active {
-    color: #00A8E8;
+    color: var(--main-blue);
 }
 
 nav {
@@ -628,7 +629,7 @@ nav li {
 
 .main-menu li:hover a,
 .main-menu li.active a {
-    color: #00A8E8;
+    color: var(--main-blue);
     text-shadow: 0px 0px 0px;
 }
 
@@ -668,7 +669,7 @@ nav li {
     -ms-transition: color 1s ease;
     -o-transition: color 1s ease;
     outline: 0;
-    color: #00a8e8;
+    color: var(--main-blue);
     transition: color 1s ease;
     cursor: pointer;
 }
@@ -693,7 +694,7 @@ nav li {
 .main-menu a:hover:before,
 .info a:hover:before {
     outline: 0;
-    background-color: #00a8e8;
+    background-color: var(--main-blue);
     -webkit-transition: all 1s ease 0s;
     -moz-transition: all 1s ease 0s;
     -ms-transition: all 1s ease 0s;
@@ -771,7 +772,7 @@ nav li {
 .home-intro-landing {
     color: #fff;
     text-align: center;
-    font-size: 22px;
+    font-size: 1.5em;
     font-weight: 300;
     line-height: 2;
     position: relative;
@@ -784,7 +785,7 @@ nav li {
 
 .home-intro-landing .custom-lettering {
     font-family: 'Finger Paint', cursive;
-    font-size: 80px;
+    font-size: 3.6em;
     line-height: 1.3;
     display: inline-block;
     position: relative;
@@ -796,10 +797,11 @@ nav li {
 }
 
 .default-btn-shortcode {
-    background-color: #00a8e8;
+    font: normal 14px/16px "Montserrat", Helvetica, Arial, Verdana, sans-serif;
+    background-color: var(--main-blue);
     background-image: none;
     color: #fff;
-    border-radius: 99px;
+    border-radius: 7.1em;
     padding: 14px 28px;
     position: relative;
     transition: all .4s ease;
@@ -807,11 +809,7 @@ nav li {
     overflow: hidden;
     margin-top: 30px !important;
     margin-bottom: 0px !important;
-    font: normal 14px/16px "Montserrat", Helvetica, Arial, Verdana, sans-serif;
     text-transform: uppercase;
-    -webkit-border-radius: 99px;
-    border-radius: 99px;
-    padding: 14px 28px;
     text-align: center;
     max-width: 100%;
     box-sizing: border-box;
@@ -823,7 +821,7 @@ nav li {
 }
 
 .default-btn-shortcode:hover {
-    background: #00a8e8;
+    background: var(--main-blue);
     color: #ededed;
     -webkit-box-shadow: 0 20px 38px rgba(0, 0, 0, .16) !important;
     box-shadow: 0 20px 38px rgba(0, 0, 0, .16) !important;
@@ -832,11 +830,11 @@ nav li {
 }
 
 .scroll {
-    background: #000 linear-gradient(transparent 0%, transparent 50%, #ffffff 50%, #ffffff 100%);
+    background: linear-gradient(transparent 0%, transparent 50%, #ffffff 50%, #ffffff 100%);
     position: relative;
-    width: 26px;
-    height: 44px;
-    border-radius: 50px;
+    width: 1.75em;
+    height: 2.93em;
+    border-radius: 3.31em;
     background-size: 100% 200%;
     -webkit-animation: colorSlide 5s linear infinite, nudgeMouse 5s ease-out infinite;
     animation: colorSlide 5s linear infinite, nudgeMouse 5s ease-out infinite;
@@ -858,8 +856,8 @@ nav li {
 }
 
 .scroll:before {
-    width: 23px;
-    height: 41px;
+    width: 1.53em;
+    height: 2.73em;
     background-color: #000;
     border-radius: 50px;
 }
@@ -1382,8 +1380,8 @@ nav li {
 /* Intro & Outro Sections */
 .intro,
 .outro {
-    height: 100vh;
-    margin-left: 150px;
+    height: 95vh;
+    margin-left: 10em;
     display: flex;
     align-items: center;
 }
@@ -1391,16 +1389,16 @@ nav li {
 .intro .wrapper,
 .outro .wrapper {
     width: 50%;
-    padding-right: 10rem;
+    padding-right: 10em;
 }
 
 .intro .wrapper h2,
 .outro .wrapper h2 {
-    width: 80%;
-    color: #fff;
-    margin-bottom: 50px;
     font: normal bold 34px/44px "Montserrat", Helvetica, Arial, Verdana, sans-serif;
     text-transform: uppercase;
+    width: 80%;
+    color: #fff;
+    margin-bottom: 1.5em;
 }
 
 .intro .wrapper .wrapper-inner a,
@@ -1426,9 +1424,9 @@ p .underline {
 }
 
 .code-editor {
-    width: 360px;
-    height: 360px;
-    border-radius: 8px;
+    width: 24em;
+    height: 24em;
+    border-radius: 0.5em;
     background-color: #4c4b58;
     background-image: radial-gradient(circle at 13px 12px, #b2b2bf7c 10px, transparent 10px), radial-gradient(circle at 13px 12px, #b2b2bf7c 10px, transparent 10px), radial-gradient(circle at 13px 12px, #b2b2bf7c 10px, transparent 10px), linear-gradient(#24252d, #24252d), linear-gradient(#31313d, #31313d), linear-gradient(to right, #ffcd2d 25%, #b7d64f 0, #b7d64f 50%, #27c1dc 0), linear-gradient(to right, #b7d64f 0, #b7d64f 25%, #27c1dc 0), linear-gradient(to right, #27c1dc, #27c1dc), linear-gradient(to right, #f45f4b 25%, #8dca5b 0, #8dca5b 70%, #4688bc 0), linear-gradient(to right, #66c065 25%, #606cb3 0);
     background-size: 23px 23px, 23px 23px, 23px 23px, 100% 65px, 38px 100%, 200px 20px, 200px 20px, 253px 20px, 200px 20px, 200px 20px;
@@ -1437,38 +1435,30 @@ p .underline {
     box-shadow: 20px 20px 0 0 #b2b2bf7c;
 }
 
-.outro .column-inner {
-    width: 10%;
-    padding-right: 30rem;
-    margin-left: -10rem;
-}
-
 /* Portfolio Section */
-.portfolio-section {
-    margin-top: -150px;
-}
 
 .single-project-container {
     position: relative;
     overflow: hidden;
+    height: 33.3vh;
 }
 
 .slide {
     background: rgba(0, 0, 0, .5);
     position: absolute;
-    left: -100%;
-    height: 100%;
+    height: 33.3vh;
+    left: -120%;
     transition: 0.5s;
 }
 
 .single-project-container:hover .slide {
     transition: 0.5s;
-    left: 90px;
+    left: 6em;
 }
 
 .single-project-container a {
-    width: 100%;
     height: 33.3vh;
+    width: 100%;
     position: relative;
     z-index: 1;
     text-decoration: none;
@@ -1505,7 +1495,7 @@ p .underline {
 }
 
 .single-project-container a p {
-    font-size: 13px;
+    font-size: 0.9em;
     color: #6a6b6f;
     opacity: .8;
     display: block;
@@ -1523,7 +1513,7 @@ p .underline {
 .single-project-container a .fa {
     position: absolute;
     top: 48%;
-    font-size: 28px;
+    font-size: 1.9em;
     right: 17vw;
     opacity: 1;
     -webkit-transition: .375s ease all;
@@ -1532,44 +1522,8 @@ p .underline {
 }
 
 .single-project-container:hover a .fa {
-    color: #00A8E8;
-    font-size: 38px;
-}
-
-/* Services Styles */
-.services {
-    height: 100vh;
-}
-
-.services .wrapper {
-    position: relative;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    text-align: center;
-    margin-top: 100px;
-}
-
-.services .services-row {
-    display: flex;
-    position: relative;
-    padding-top: 30px;
-    margin-left: 200px;
-    box-sizing: border-box;
-}
-
-.services .services-row .single-service-box {
-    box-sizing: border-box;
-    padding-left: 7.5px;
-    padding-right: 7.5px;
-    width: 100%;
-    padding-top: 0px !important;
-}
-
-.services-row .single-service-box h4 {
-    color: #6a6b6f;
-    text-transform: uppercase;
-    letter-spacing: 0;
-    font: normal 18px/30px "Montserrat", Helvetica, Arial, Verdana, sans-serif;
+    color: var(--main-blue);
+    font-size: 2.5em;
 }
 
 /* Footer Styles */
@@ -1587,28 +1541,28 @@ footer .cta {
 }
 
 footer .cta .cta-title {
-    font-family: finger paint;
-    font-size: 80px;
+    font-family: 'Finger Paint', cursive;
+    font-size: 5.3em;
     line-height: 1;
 
 }
 
 footer .cta .cta-subtitle {
     margin-top: -5vh;
-    font-size: 18px;
+    font-size: 1.2em;
 }
 
 footer .bottom-text-block {
     background-color: #000;
     padding: 5px 0;
-    color: #6a6b6f;
+    color: var(--main-grey);
     font-size: 13px;
     line-height: 23px;
 }
 
 footer .bottom-text-block .fa {
-    color: #00a8e8;
-    font-size: 13px;
+    color: var(--main-blue);
+    font-size: 0.86em;
     display: inline;
     top: 0;
 }
@@ -1621,8 +1575,8 @@ footer .bottom-text-block .fa {
 
 .info h1 {
     color: #fff;
-    font-family: finger paint;
-    font-size: 50px;
+    font-family: 'Finger Paint', cursive;
+    font-size: 3.3em;
     line-height: 1.3;
     font-weight: 500;
 }
@@ -1633,7 +1587,7 @@ footer .bottom-text-block .fa {
 
 .info .wrapper .column-wrapper {
     width: 55%;
-    padding-right: 50px;
+    padding-right: 3.3em;
 }
 
 .info img {
@@ -1645,12 +1599,12 @@ footer .bottom-text-block .fa {
     position: relative;
     text-transform: uppercase;
     color: #fff;
-    font-size: 13px;
+    font-size: 0.9em;
     font-weight: 700;
 }
 
 .info p {
-    margin-bottom: 10px;
+    margin-bottom: 0.7em;
 }
 
 .info a {
@@ -1666,10 +1620,10 @@ footer .bottom-text-block .fa {
 .inputBox textarea {
     width: 100%;
     padding: 10px 0;
-    font-size: 16px;
+    font-size: 1em;
     color: #fff;
     letter-spacing: 1px;
-    margin-bottom: 30px;
+    margin-bottom: 2em;
     border: none;
     border-bottom: 1px solid #fff;
     outline: none;
@@ -1682,7 +1636,7 @@ footer .bottom-text-block .fa {
     left: 0;
     letter-spacing: 1px;
     padding: 10px 0;
-    font-size: 16px;
+    font-size: 1em;
     color: #fff;
     pointer-events: none;
     transition: .5s;
@@ -1690,15 +1644,15 @@ footer .bottom-text-block .fa {
 
 .inputBox input:focus,
 .inputBox textarea:focus {
-    border-bottom: 2px solid #03a9f4;
+    border-bottom: 2px solid var(--main-blue);
 }
 
 .inputBox input:focus~label,
 .inputBox textarea:focus~label {
-    top: -25px;
+    font-size: 0.8em;
+    top: -2.1em;
     left: 0;
-    color: #03a9f4;
-    font-size: 12px;
+    color: var(--main-blue);
 }
 
 input[type="submit"] {
@@ -1706,19 +1660,19 @@ input[type="submit"] {
     border: none;
     outline: none;
     color: #fff;
-    background: #03a9f4;
+    background: var(--main-blue);
     padding: 10px 20px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 0.3em;
 }
 
 /* Project Styles */
 .projects {
-    margin-left: 150px;
+    margin-left: 10em;
 }
 
 .projects-heading {
-    padding: 100px 0 100px;
+    padding: 6.6em 0 6.6em;
 }
 
 .projects h1.portfolio {
@@ -1734,7 +1688,7 @@ input[type="submit"] {
 }
 
 .big-picture {
-    padding-bottom: 100px;
+    padding-bottom: 6.6em;
 }
 
 .big-picture img {
@@ -1744,20 +1698,20 @@ input[type="submit"] {
 }
 
 .gallery {
-    margin-left: -60px;
-    padding-bottom: 100px;
-    height: 300px;
+    margin-left: -4em;
+    padding-bottom: 6.7em;
+    height: 20em;
     width: 100vw;
     display: flex;
 }
 
 .gallery img {
-    width: 420px;
+    width: 28em;
 }
 
 .projects .btn-align-center {
-    padding-bottom: 100px;
-    margin-left: -150px;
+    padding-bottom: 6.7em;
+    margin-left: -10em;
 }
 
 .m4 {
@@ -1807,7 +1761,7 @@ input[type="submit"] {
 .projects-background {
     background-position: center;
     background-size: cover;
-    margin-left: -60px;
+    margin-left: -4em;
     height: 62vh;
 }
 
@@ -1820,26 +1774,26 @@ input[type="submit"] {
 /* Chart Styles */
 
 .bar-wrapper {
-    margin: -35px auto;
+    margin: -2.3em auto;
 }
 
 .bar-wrapper img {
-    height: 30px;
+    height: 2em;
 }
 
 .progress-bar {
     position: relative;
     border: #ccc solid 1px;
-    width: 200px;
-    height: 20px;
-    line-height: 20px;
-    top: -35px;
+    width: 13.3em;
+    height: 1.3em;
+    line-height: 1.3em;
+    top: -2.3em;
     vertical-align: middle;
     overflow: hidden;
-    margin: auto 75px;
+    margin: auto 5em;
     font-family: arial, sans-serif;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 1em;
     box-shadow: 0 4px 10px -5px rgba(0, 0, 0, 0.25);
 }
 
@@ -1853,7 +1807,7 @@ input[type="submit"] {
 .progress-bar .bar span {
     position: absolute;
     display: block;
-    width: 200px;
+    width: 13.3em;
     height: 100%;
     text-align: center;
 }
@@ -1889,6 +1843,11 @@ input[type="submit"] {
     width: 15%;
 }
 
+.progress-bar .bar.positive.red2 {
+    background: #C3002F;
+    width: 15%;
+}
+
 .progress-bar .bar.positive.blue2 {
     background: #01579B;
     width: 70%;
@@ -1921,6 +1880,10 @@ input[type="submit"] {
 }
 
 .progress-bar .bar.negative.green {
+    width: 85%;
+}
+
+.progress-bar .bar.negative.red2 {
     width: 85%;
 }
 
