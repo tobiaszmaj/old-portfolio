@@ -1415,7 +1415,7 @@ p .underline {
 
 /* Footer Styles */
 footer {
-    height: 60vh;
+    height: 50%;
     background-color: #fff;
     margin: 0 auto;
     padding-top: 10vh;
@@ -1481,6 +1481,8 @@ footer .bottom-text-block .fa {
 .info img {
     border-radius: 5%;
     margin-top: 10vh;
+    margin-left: 5vw;
+    width: 30vw;
 }
 
 .info .custom-subtitle {
@@ -1581,25 +1583,24 @@ input[type="submit"] {
     margin-left: 6vw;
 }
 
+.projects .wrapper img {
+    width: 80vw;
+    position: center;
+}
+
 .big-picture {
     padding-bottom: 6.6em;
 }
 
 .big-picture img {
     width: 83vw;
-    height: 90vh;
 }
 
 .gallery {
-    margin-left: -6vw;
+    margin-left: -10vw;
     padding-bottom: 6.7em;
-    height: 60vh;
     width: 100vw;
     display: flex;
-}
-
-.gallery img {
-    width: 31.3vw;
 }
 
 .projects .btn-align-center {
@@ -1818,7 +1819,7 @@ input[type="submit"] {
 
 /* ---------- TABLET VERSION ---------- */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
 
     /* Landing Section */
 
@@ -1893,14 +1894,14 @@ input[type="submit"] {
 
     /* Info Section */
     .info {
-        margin-left: 12vh;
-        height: 65vh;
-        width: 100vw;
+        margin-left: 20vw;
+        height: 80vh;
+        width: 90vw;
         text-align: left;
     }
 
     .info .column-wrapper p {
-        width: 80vw;
+        width: 70vw;
     }
 
     .info img {
@@ -1962,7 +1963,7 @@ input[type="submit"] {
     }
 
     .projects .photos {
-        height: 120vh;
+        height: 150vh;
         margin: 0;
         padding: 0;
     }
@@ -1970,16 +1971,16 @@ input[type="submit"] {
     .projects .wrapper img {
         margin-left: 10vw;
         width: 80vw;
+        position: center;
     }
 
     .projects .btn-align-center {
-        margin: 10vh auto;
+        margin: 40vh auto;
     }
 
     .big-picture img {
         margin-left: 4.5vw;
         width: 60vw;
-        height: 30vh;
     }
 
     .gallery {
@@ -1994,7 +1995,7 @@ input[type="submit"] {
     /* Footer Styles */
 
     footer {
-        height: 45vh;
+        height: 60vh;
     }
 
     .cta,
@@ -2005,7 +2006,7 @@ input[type="submit"] {
 }
 
 /* ---------- MOBILE VERSION ---------- */
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 600px) {
 
     /* Mobile Menu */
     .main-menu {
@@ -2117,10 +2118,13 @@ input[type="submit"] {
         width: 80vw;
     }
 
+    .projects .btn-align-center {
+        margin: 20vh auto;
+    }
+
     .big-picture img {
         margin: 0;
         width: 40vw;
-        height: 25vh;
     }
 
     /* Footer Section */
