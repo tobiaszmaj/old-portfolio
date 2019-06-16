@@ -1611,6 +1611,10 @@ input[type="submit"] {
     margin: 10vh 10vw 10vh 5vw;
 }
 
+.jm {
+    background-image: url(../img/mockups/journey-mockup.png);
+}
+
 .em {
     background-image: url(../img/mockups/employee-mockup.png);
 }
@@ -1643,16 +1647,8 @@ input[type="submit"] {
     background-image: url(../img/mockups/solufix-mockup.png);
 }
 
-.jdm {
-    background-image: url(../img/mockups/johnDoe-mockup.png);
-}
-
 .mtm {
     background-image: url(../img/mockups/myTunes-mockup.png);
-}
-
-.mam {
-    background-image: url(../img/mockups/meetingsApp-mockup.png);
 }
 
 .om {
@@ -1684,6 +1680,7 @@ input[type="submit"] {
 
 
 .bar-wrapper img {
+    margin: 0;
     height: 1.8rem;
 }
 
@@ -1695,7 +1692,7 @@ input[type="submit"] {
     line-height: 1.3em;
     vertical-align: middle;
     overflow: hidden;
-    margin: 4rem 4rem 0 -5rem;
+    margin: 0 5rem 0 -10vw;
     font-family: arial, sans-serif;
     font-weight: bold;
     font-size: 1em;
@@ -1890,10 +1887,6 @@ input[type="submit"] {
     .slide {
         height: 20vh;
         left: -200%;
-    }
-
-    .single-project-container:hover .slide {
-        left: -25vw;
     }
 
     .single-project-container a .fa {
@@ -2116,12 +2109,12 @@ input[type="submit"] {
     }
 
     .mobile-nav a {
+        font-family: "Montserrat";
         display: block;
         padding: 12px 0;
         color: #fff;
-        font-size: 1.4em;
+        font-size: 1.2rem;
         text-decoration: none;
-        font-weight: bold;
     }
 
     .open-mobile-nav {
@@ -2248,10 +2241,6 @@ input[type="submit"] {
 
     .projects {
         margin: 0;
-    }
-
-    .projects-background {
-        margin-top: 10vh;
     }
 
     .projects-heading {
