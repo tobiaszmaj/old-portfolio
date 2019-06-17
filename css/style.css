@@ -1669,6 +1669,7 @@ input[type="submit"] {
 /* Chart Styles */
 
 .chart-wrapper {
+    margin-top: 10vh;
     width: 50%;
 }
 
