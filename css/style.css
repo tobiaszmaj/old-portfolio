@@ -2119,7 +2119,7 @@ input[type="submit"] {
     }
 
     .open-mobile-nav {
-        position: absolute;
+        position: fixed;
         top: 15px;
         padding-top: 20px;
         right: 15px;
@@ -2134,7 +2134,7 @@ input[type="submit"] {
     }
 
     .burger {
-        position: relative;
+        position: fixed;
         display: block;
         width: 28px;
         height: 4px;
