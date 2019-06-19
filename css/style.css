@@ -783,7 +783,7 @@ nav li {
 .home-intro-landing {
     color: #fff;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2vw;
     font-weight: 300;
     line-height: 2;
     position: relative;
@@ -795,7 +795,7 @@ nav li {
 
 .home-intro-landing .custom-lettering {
     font-family: 'Finger Paint', cursive;
-    font-size: 5rem;
+    font-size: 5vw;
     line-height: 1.3;
     display: inline-block;
     position: relative;
@@ -821,7 +821,7 @@ nav li {
     margin-bottom: 0 !important;
     text-transform: uppercase;
     text-align: center;
-    max-width: 100%;
+    min-width: 12vw;
     box-sizing: border-box;
     white-space: normal;
     display: inline-block;
@@ -1267,7 +1267,7 @@ nav li {
 .intro,
 .outro {
     height: 95vh;
-    margin: 10vh 0 0 15vw;
+    margin: 5vh 0 0 15vw;
     display: flex;
     align-items: center;
 }
@@ -1283,7 +1283,7 @@ nav li {
 
 .intro .wrapper h2,
 .outro .wrapper h2 {
-    font: normal bold 34px/44px "Montserrat", Helvetica, Arial, Verdana, sans-serif;
+    font: normal bold 220%/1.5 "Montserrat", Helvetica, Arial, Verdana, sans-serif;
     text-transform: uppercase;
     width: 100%;
     color: #fff;
@@ -1292,7 +1292,8 @@ nav li {
 
 .intro .wrapper p,
 .outro .wrapper p {
-    margin-bottom: 1rem
+    font-size: 110%;
+    margin-bottom: 1rem;
 }
 
 .intro .wrapper .wrapper-inner a,
@@ -1378,7 +1379,7 @@ p .underline {
     -webkit-transition: .7s ease all;
     transition: .7s ease all;
     will-change: transition;
-    font: normal 22px/30px "Montserrat", Helvetica, Arial, Verdana, sans-serif;
+    font: normal 150%/2 "Montserrat", Helvetica, Arial, Verdana, sans-serif;
     text-transform: none;
 }
 
@@ -1387,7 +1388,7 @@ p .underline {
 }
 
 .single-project-container a p {
-    font-size: 0.9em;
+    font-size: 100%;
     color: #6a6b6f;
     opacity: .8;
     display: block;
@@ -1404,7 +1405,7 @@ p .underline {
 .single-project-container a .fa {
     position: absolute;
     top: 48%;
-    font-size: 1.9em;
+    font-size: 2vw;
     right: 17vw;
     opacity: 1;
     -webkit-transition: .375s ease all;
@@ -1414,7 +1415,7 @@ p .underline {
 
 .single-project-container:hover a .fa {
     color: var(--main-blue);
-    font-size: 2.5em;
+    font-size: 2.5vw;
 }
 
 /* Footer Styles */
@@ -1434,13 +1435,13 @@ footer .cta {
 
 footer .cta .cta-title {
     font-family: 'Finger Paint', cursive;
-    font-size: 5.3rem;
+    font-size: 700%;
     line-height: 1;
     padding-bottom: 5vh;
 }
 
 footer .cta .cta-subtitle {
-    font-size: 1.2em;
+    font-size: 120%;
 }
 
 footer .bottom-text-block {
@@ -1468,7 +1469,7 @@ footer .bottom-text-block .fa {
 .info h1 {
     color: #fff;
     font-family: 'Finger Paint', cursive;
-    font-size: 3.3em;
+    font-size: 400%;
     line-height: 1.3;
     font-weight: 500;
 }
@@ -1493,7 +1494,7 @@ footer .bottom-text-block .fa {
     position: relative;
     text-transform: uppercase;
     color: #fff;
-    font-size: 0.9em;
+    font-size: 100%;
     font-weight: 700;
 }
 
@@ -1512,7 +1513,7 @@ footer .bottom-text-block .fa {
 
 .inputBox input,
 .inputBox textarea {
-    width: 100%;
+    width: 30vw;
     padding: 10px 0;
     font-size: 1em;
     color: #fff;
@@ -1579,7 +1580,7 @@ input[type="submit"] {
 }
 
 .projects p.portfolio {
-    font: normal 400 1.6rem/2.5 "Montserrat", Helvetica, Arial, Verdana, sans-serif;
+    font: normal 400 1.6rem/2 "Montserrat", Helvetica, Arial, Verdana, sans-serif;
     color: #6a6b6f;
 }
 
@@ -1662,19 +1663,19 @@ input[type="submit"] {
 }
 
 .icon {
-    height: 5vh;
+    height: 2rem;
     padding-left: 10px;
 }
 
 /* Chart Styles */
 
 .chart-wrapper {
-    margin-top: 10vh;
+    margin-top: 9vh;
     width: 50%;
 }
 
 .bar-wrapper {
-    height: 8vh;
+    height: 6vh;
     display: flex;
     align-items: center;
 }
@@ -1833,6 +1834,14 @@ input[type="submit"] {
         margin-left: 10vw;
     }
 
+    .home-intro-landing {
+        font-size: 1rem;
+    }
+
+    .home-intro-landing .custom-lettering {
+        font-size: 2.8rem;
+    }
+
     .scroll {
         left: 52%;
     }
@@ -1840,7 +1849,7 @@ input[type="submit"] {
     /* Intro & Outro Sections */
     .intro,
     .outro {
-        height: 60vh;
+        height: 100vh;
         width: 100vw;
         margin-left: -5vw;
         text-align: center;
@@ -1849,12 +1858,8 @@ input[type="submit"] {
         justify-content: space-around;
     }
 
-    .intro {
-        margin-top: 10vh;
-    }
-
     .outro {
-        height: 40vh;
+        height: 60vh;
         margin-bottom: 10vh;
     }
 
@@ -1881,12 +1886,19 @@ input[type="submit"] {
         height: 20vh;
     }
 
+    .single-project-container a h4 {
+        margin-left: 5vw;
+        font-size: 100%;
+    }
+
     .single-project-container p {
-        color: #fff;
+        margin-left: 5vw;
+        font-size: 75% !important;
     }
 
     .slide {
         height: 20vh;
+        width: 100vw;
         left: -200%;
     }
 
@@ -1897,7 +1909,7 @@ input[type="submit"] {
     /* Info Section */
     .info {
         margin-left: 20vw;
-        height: 80vh;
+        height: 100vh;
         width: 90vw;
         text-align: left;
     }
@@ -1924,7 +1936,12 @@ input[type="submit"] {
 
     .form-wrapper {
         width: 70vw;
-        margin: 5vh 0;
+        margin: 10vh 0;
+    }
+
+    .inputBox input,
+    .inputBox textarea {
+        width: 70vw
     }
 
     /* Projects Section */
@@ -1936,21 +1953,21 @@ input[type="submit"] {
 
     .projects h1.portfolio {
         font: normal 800 1.5rem/2 "Montserrat", Helvetica, Arial, Verdana, sans-serif;
-        margin-left: 3vw;
+        margin-left: 4vw;
     }
 
     .projects p.portfolio {
         font: normal 400 1rem/2 "Montserrat", Helvetica, Arial, Verdana, sans-serif;
-        margin-left: 3vw;
+        margin-left: 4vw;
     }
 
     .projects-heading p {
-        margin-left: 3vw;
-        font-size: 0.8em;
+        margin-left: 4vw;
+        font-size: 80%;
     }
 
     .icon {
-        height: 24px;
+        height: 1.5rem;
         padding-left: 10px;
         margin-bottom: -5px;
     }
@@ -1977,7 +1994,7 @@ input[type="submit"] {
     }
 
     .projects .btn-align-center {
-        margin: 40vh auto;
+        margin: 50vh auto 20vh;
     }
 
     .big-picture img {
@@ -2003,6 +2020,10 @@ input[type="submit"] {
     .cta,
     .bottom-bar {
         margin-left: 8vw;
+    }
+
+    footer .cta .cta-title {
+        font-size: 500%;
     }
 
 }
@@ -2193,28 +2214,19 @@ input[type="submit"] {
         margin-left: 0;
     }
 
-    .home-intro-landing {
-        font-size: 1rem;
-    }
-
-    .home-intro-landing .custom-lettering {
-        font-size: 3rem;
-    }
-
     .scroll {
         left: 45%;
     }
 
     /* Intro & Outro Sections */
     .intro {
-        height: 100vh;
+        height: 180vh;
         width: 100vw;
         margin-left: -10vw;
-        margin-bottom: 10vh;
     }
 
     .outro {
-        height: 70vh;
+        height: 80vh;
         margin-left: -12vw;
     }
 
@@ -2235,7 +2247,11 @@ input[type="submit"] {
     /* Info Section */
     .info {
         margin-left: 6vh;
-        height: 150vh;
+        height: 180vh;
+    }
+
+    .info h1 {
+        font-size: 250%;
     }
 
     /* Projects Section */
@@ -2280,7 +2296,7 @@ input[type="submit"] {
     /* Footer Section */
 
     footer {
-        height: 50%;
+        height: 60%;
         padding-top: 5vh;
     }
 
