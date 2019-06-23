@@ -9,28 +9,47 @@
 
 /* Global Styles */
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
 *,
 *::before,
 *::after {
+    margin: 0;
+    padding: 0;
     box-sizing: inherit;
 }
 
 html {
-    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+@media only screen and (max-width: 75em) {
+    html {
+        font-size: 56.25%;
+    }
+}
+
+@media only screen and (max-width: 56.25em) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media only screen and (min-width: 112.5em) {
+    html {
+        font-size: 75%;
+    }
 }
 
 
+
+
 body {
-    font: 0.95rem/1.75 "Work Sans", Helvetica, Arial, Verdana, sans-serif;
-    word-spacing: normal;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
     color: var(--main-grey);
     background: var(--main-dark);
     overflow-x: hidden;
+    box-sizing: border-box;
 }
 
 /* Preloader Styles */
@@ -68,7 +87,7 @@ body {
 .preloader .wrapper {
     position: relative;
     color: #fff;
-    font-size: 2rem;
+    font-size: 2.8rem;
     text-transform: uppercase;
     letter-spacing: 0.25rem;
     padding-left: 0.5rem;
@@ -363,7 +382,7 @@ body {
     14%,
     23% {
         -webkit-transform: translateY(-101%);
-        transform: translateY(-101%);
+        transform: translateY(-102%);
     }
 
     30%,
@@ -374,12 +393,12 @@ body {
 
     72% {
         -webkit-transform: translateY(101%);
-        transform: translateY(101%);
+        transform: translateY(102%);
     }
 
     100% {
         -webkit-transform: translateY(101%);
-        transform: translateY(101%);
+        transform: translateY(102%);
     }
 }
 
@@ -523,9 +542,9 @@ body {
 
 .main-menu .logo {
     display: block;
-    width: 3vw;
-    height: 3vh;
-    margin: 2vh 0 0 1.5vw;
+    width: 2.5vw;
+    height: 2.5vh;
+    margin: 2vh 0 0 2vw;
 }
 
 .main-menu .logo:hover {
@@ -551,8 +570,8 @@ body {
 }
 
 .main-menu img {
-    width: 4vw;
-    height: 8vh;
+    width: 3vw;
+    height: 6vh;
 }
 
 .main-menu li {
@@ -563,7 +582,7 @@ body {
 
 .main-menu li a {
     font-family: "Montserrat", sans-serif;
-    font-size: 100%;
+    font-size: 1.2rem;
     position: relative;
     width: 19vw;
     display: table;
@@ -579,16 +598,16 @@ body {
 }
 
 .main-menu .nav-text {
-    font-size: 2vh;
+    font-size: 1.2rem;
+    font-weight: normal;
     position: relative;
     display: table-cell;
-    vertical-align: middle;
     width: 12vw;
+    top: 2vh;
 }
 
 .main-menu .social-menu ul {
     position: absolute;
-    font-size: 100%;
     left: 0;
     bottom: 0;
 }
@@ -597,13 +616,12 @@ body {
 
 .fa,
 .fab {
-    width: 6vw;
+    width: 6.5vw;
     height: 6vh;
     position: relative;
     display: table-cell;
-    vertical-align: middle;
     text-align: center;
-    top: 1.4vh;
+    top: 2vh;
 }
 
 nav.main-menu:hover,
@@ -779,13 +797,15 @@ nav li {
 }
 
 .home-intro-landing {
+    left: 50%;
+    transform: translateX(-50%);
     color: #fff;
     text-align: center;
-    font-size: 2vw;
+    font-size: 2rem;
     font-weight: 300;
     line-height: 2;
     position: relative;
-    font-family: 'Montserrat', Helvetica, Arial, Verdana, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     letter-spacing: 0;
     pointer-events: none;
@@ -793,7 +813,7 @@ nav li {
 
 .home-intro-landing .custom-lettering {
     font-family: 'Finger Paint', cursive;
-    font-size: 5vw;
+    font-size: 8rem;
     line-height: 1.3;
     display: inline-block;
     position: relative;
@@ -805,7 +825,7 @@ nav li {
 }
 
 .default-btn-shortcode {
-    font: normal 1rem/1 "Montserrat", Helvetica, Arial, Verdana, sans-serif;
+    font: normal 1.5rem/1 "Montserrat", sans-serif;
     background-color: var(--main-blue);
     background-image: none;
     color: #fff;
@@ -839,15 +859,15 @@ nav li {
 .scroll {
     background: linear-gradient(transparent 0%, transparent 50%, #ffffff 50%, #ffffff 100%);
     position: relative;
-    width: 1.75em;
-    height: 2.93em;
-    border-radius: 3.31em;
+    width: 3em;
+    height: 5em;
+    border-radius: 2.8em;
     background-size: 100% 200%;
     -webkit-animation: colorSlide 5s linear infinite, nudgeMouse 5s ease-out infinite;
     animation: colorSlide 5s linear infinite, nudgeMouse 5s ease-out infinite;
     position: absolute;
-    left: 50%;
     bottom: 5%;
+    left: 49%;
 }
 
 .scroll:before,
@@ -862,10 +882,10 @@ nav li {
 }
 
 .scroll:before {
-    width: 1.53em;
-    height: 2.73em;
+    width: 2.6em;
+    height: 4.8em;
     background-color: #000;
-    border-radius: 50px;
+    border-radius: 5em;
 }
 
 .info .scroll:before {
@@ -874,7 +894,7 @@ nav li {
 
 .scroll:after {
     background-color: #fff;
-    width: 5px;
+    width: 4px;
     height: 5px;
     border-radius: 50%;
     -webkit-animation: trackBallSlide 5s linear infinite;
@@ -1281,7 +1301,7 @@ nav li {
 
 .intro .wrapper h2,
 .outro .wrapper h2 {
-    font: normal bold 220%/1.5 "Montserrat", Helvetica, Arial, Verdana, sans-serif;
+    font: normal bold 3rem/1.5 "Montserrat", Helvetica, Arial, Verdana, sans-serif;
     text-transform: uppercase;
     width: 100%;
     color: #fff;
@@ -1290,7 +1310,7 @@ nav li {
 
 .intro .wrapper p,
 .outro .wrapper p {
-    font-size: 110%;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
 }
 
@@ -1377,7 +1397,7 @@ p .underline {
     -webkit-transition: .7s ease all;
     transition: .7s ease all;
     will-change: transition;
-    font: normal 150%/2 "Montserrat", Helvetica, Arial, Verdana, sans-serif;
+    font: normal 2rem/2 "Montserrat", sans-serif;
     text-transform: none;
 }
 
@@ -1386,7 +1406,7 @@ p .underline {
 }
 
 .single-project-container a p {
-    font-size: 100%;
+    font-size: 1.4rem;
     color: #6a6b6f;
     opacity: .8;
     display: block;
@@ -1403,7 +1423,7 @@ p .underline {
 .single-project-container a .fa {
     position: absolute;
     top: 48%;
-    font-size: 2vw;
+    font-size: 2.5rem;
     right: 17vw;
     opacity: 1;
     -webkit-transition: .375s ease all;
@@ -1413,7 +1433,7 @@ p .underline {
 
 .single-project-container:hover a .fa {
     color: var(--main-blue);
-    font-size: 2.5vw;
+    font-size: 3.5rem;
 }
 
 /* Footer Styles */
@@ -1433,17 +1453,17 @@ footer .cta {
 
 footer .cta .cta-title {
     font-family: 'Finger Paint', cursive;
-    font-size: 700%;
+    font-size: 7rem;
     line-height: 1;
     padding-bottom: 5vh;
 }
 
 footer .cta .cta-subtitle {
-    font-size: 3vh;
+    font-size: 2rem;
 }
 
 footer .bottom-text-block {
-    font-size: 1.8vh;
+    font-size: 1.4rem;
     line-height: 1.8vh;
     background-color: #000;
     padding: 1vh 0;
@@ -1491,7 +1511,7 @@ footer .bottom-text-block {
 .info h1 {
     color: #fff;
     font-family: 'Finger Paint', cursive;
-    font-size: 400%;
+    font-size: 6rem;
     line-height: 1.3;
     font-weight: 500;
 }
@@ -1516,12 +1536,12 @@ footer .bottom-text-block {
     position: relative;
     text-transform: uppercase;
     color: #fff;
-    font-size: 100%;
+    font-size: 1.5rem;
     font-weight: 700;
 }
 
 .info p {
-    font-size: 110%;
+    font-size: 1.5rem;
     margin-top: 4vh;
 }
 
@@ -1538,7 +1558,7 @@ footer .bottom-text-block {
 .inputBox textarea {
     width: 30vw;
     padding: 10px 0;
-    font-size: 1em;
+    font-size: 1.5rem;
     color: #fff;
     letter-spacing: 1px;
     margin-bottom: 2rem;
@@ -1554,7 +1574,7 @@ footer .bottom-text-block {
     left: 0;
     letter-spacing: 1px;
     padding: 10px 0;
-    font-size: 1em;
+    font-size: 1.3rem;
     color: #fff;
     pointer-events: none;
     transition: .5s;
@@ -1567,8 +1587,8 @@ footer .bottom-text-block {
 
 .inputBox input:focus~label,
 .inputBox textarea:focus~label {
-    font-size: 0.8em;
-    top: -2.1em;
+    font-size: 1.1rem;
+    top: -2.1rem;
     left: 0;
     color: var(--main-blue);
 }
@@ -1595,16 +1615,24 @@ input[type="submit"] {
     padding: 3rem 0 6.6rem;
 }
 
+.projects-heading p {
+    font-size: 1.2rem;
+}
+
 .projects h1.portfolio {
-    font: normal 800 2.75rem/3 "Montserrat", Helvetica, Arial, Verdana, sans-serif;
+    font: normal 800 4rem/3 "Montserrat", sans-serif;
     letter-spacing: 0;
     text-transform: uppercase;
     color: #fff;
 }
 
 .projects p.portfolio {
-    font: normal 400 1.6rem/2 "Montserrat", Helvetica, Arial, Verdana, sans-serif;
+    font: normal 400 2rem/2 "Montserrat", sans-serif;
     color: #6a6b6f;
+}
+
+.projects .icon {
+    height: 2.5rem;
 }
 
 .projects .wrapper {
@@ -1621,7 +1649,8 @@ input[type="submit"] {
 }
 
 .big-picture img {
-    width: 83vw;
+    width: 80vw;
+    margin-left: 2vw;
 }
 
 .gallery {
@@ -1706,7 +1735,7 @@ input[type="submit"] {
 
 .bar-wrapper img {
     margin: 0;
-    height: 1.8rem;
+    height: 2.5rem;
 }
 
 .progress-bar {
@@ -1718,9 +1747,9 @@ input[type="submit"] {
     vertical-align: middle;
     overflow: hidden;
     margin: 0 5rem 0 -10vw;
-    font-family: arial, sans-serif;
+    font-family: Arial, sans-serif;
     font-weight: bold;
-    font-size: 1em;
+    font-size: 1.5rem;
     box-shadow: 0 4px 10px -5px rgba(0, 0, 0, 0.25);
 }
 
@@ -1853,14 +1882,6 @@ input[type="submit"] {
 
     /* Menu */
 
-    .main-menu .nav-text {
-        font-size: 1.5vh;
-    }
-
-    .main-menu li a {
-        font-size: 80%;
-    }
-
     .main-menu .logo img {
         display: none;
     }
@@ -1872,14 +1893,6 @@ input[type="submit"] {
         margin-left: 10vw;
     }
 
-    .home-intro-landing {
-        font-size: 1rem;
-    }
-
-    .home-intro-landing .custom-lettering {
-        font-size: 2.8rem;
-    }
-
     .scroll {
         left: 52%;
     }
@@ -1887,7 +1900,7 @@ input[type="submit"] {
     /* Intro & Outro Sections */
     .intro,
     .outro {
-        height: 100vh;
+        height: 60vh;
         width: 100vw;
         margin-left: -5vw;
         text-align: center;
@@ -1897,7 +1910,7 @@ input[type="submit"] {
     }
 
     .outro {
-        height: 60vh;
+        height: 40vh;
         margin-bottom: 10vh;
     }
 
@@ -1926,12 +1939,10 @@ input[type="submit"] {
 
     .single-project-container a h4 {
         margin-left: 5vw;
-        font-size: 100%;
     }
 
     .single-project-container p {
         margin-left: 5vw;
-        font-size: 75% !important;
     }
 
     .slide {
@@ -1947,7 +1958,7 @@ input[type="submit"] {
     /* Info Section */
     .info {
         margin-left: 20vw;
-        height: 100vh;
+        height: 70vh;
         width: 90vw;
         text-align: left;
     }
@@ -1990,18 +2001,15 @@ input[type="submit"] {
     }
 
     .projects h1.portfolio {
-        font: normal 800 1.5rem/2 "Montserrat", Helvetica, Arial, Verdana, sans-serif;
-        margin-left: 4vw;
+        margin-left: 2vw;
     }
 
     .projects p.portfolio {
-        font: normal 400 1rem/2 "Montserrat", Helvetica, Arial, Verdana, sans-serif;
-        margin-left: 4vw;
+        margin-left: 2vw;
     }
 
     .projects-heading p {
-        margin-left: 4vw;
-        font-size: 80%;
+        margin-left: 2vw;
     }
 
     .icon {
@@ -2011,28 +2019,20 @@ input[type="submit"] {
     }
 
     .projects .wrapper {
-        height: 150vh;
-    }
-
-    .projects .wrapper {
         margin: 0 0 20vh 0;
-        height: 25vh;
+        height: 50vh;
     }
 
     .projects .photos {
-        height: 150vh;
+        height: 220vh;
         margin: 0;
         padding: 0;
     }
 
     .projects .wrapper img {
-        margin-left: 10vw;
+        margin-left: 8vw;
         width: 80vw;
         position: center;
-    }
-
-    .projects .btn-align-center {
-        margin: 50vh auto 20vh;
     }
 
     .big-picture img {
@@ -2052,16 +2052,7 @@ input[type="submit"] {
     /* Footer Styles */
 
     footer {
-        height: 60vh;
-    }
-
-    .cta,
-    .bottom-bar {
-        margin-left: 8vw;
-    }
-
-    footer .cta .cta-title {
-        font-size: 500%;
+        height: 40%;
     }
 
 }
@@ -2169,11 +2160,11 @@ input[type="submit"] {
     }
 
     .mobile-nav a {
-        font-family: "Montserrat";
+        font-family: "Montserrat", sans-serif;
         display: block;
         padding: 12px 0;
         color: #fff;
-        font-size: 1.2rem;
+        font-size: 2.5rem;
         text-decoration: none;
     }
 
@@ -2236,9 +2227,9 @@ input[type="submit"] {
 
     .burger-text {
         display: block;
-        font-size: .675rem;
-        letter-spacing: .05em;
-        margin-top: .5em;
+        font-size: 1.1rem;
+        letter-spacing: .05rem;
+        margin-top: 1rem;
         text-transform: uppercase;
         font-weight: 500;
         text-align: center;
@@ -2258,13 +2249,13 @@ input[type="submit"] {
 
     /* Intro & Outro Sections */
     .intro {
-        height: 180vh;
+        height: 90vh;
         width: 100vw;
         margin-left: -10vw;
     }
 
     .outro {
-        height: 80vh;
+        height: 40vh;
         margin-left: -12vw;
     }
 
@@ -2285,11 +2276,11 @@ input[type="submit"] {
     /* Info Section */
     .info {
         margin-left: 6vh;
-        height: 180vh;
+        height: 110vh;
     }
 
     .info h1 {
-        font-size: 250%;
+        font-size: 5rem;
     }
 
     /* Projects Section */
@@ -2308,11 +2299,11 @@ input[type="submit"] {
 
     .projects .wrapper {
         margin: 0;
-        height: 25vh;
+        height: 30vh;
     }
 
     .projects .photos {
-        height: 120vh;
+        height: 150vh;
         margin: 0;
         padding: 0;
     }
@@ -2323,7 +2314,8 @@ input[type="submit"] {
     }
 
     .projects .btn-align-center {
-        margin: 20vh auto;
+        margin-left: 10vw;
+        margin-top: 10vh;
     }
 
     .big-picture img {
@@ -2344,10 +2336,5 @@ input[type="submit"] {
 
     footer .cta .cta-title {
         padding-bottom: 0;
-    }
-
-    .cta,
-    .bottom-bar {
-        margin-left: 0;
     }
 }
