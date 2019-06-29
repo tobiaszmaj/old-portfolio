@@ -382,7 +382,7 @@ body {
     14%,
     23% {
         -webkit-transform: translateY(-101%);
-        transform: translateY(-102%);
+        transform: translateY(-101%);
     }
 
     30%,
@@ -393,12 +393,12 @@ body {
 
     72% {
         -webkit-transform: translateY(101%);
-        transform: translateY(102%);
+        transform: translateY(101%);
     }
 
     100% {
         -webkit-transform: translateY(101%);
-        transform: translateY(102%);
+        transform: translateY(101%);
     }
 }
 
@@ -1664,48 +1664,48 @@ input[type="submit"] {
     margin: 10vh 10vw 10vh 5vw;
 }
 
+.edm {
+    background-image: url(../img/mockups/edm-mockup.jpg);
+}
+
 .jm {
-    background-image: url(../img/mockups/journey-mockup.png);
+    background-image: url(../img/mockups/journey-mockup.jpg);
+}
+
+.rm {
+    background-image: url(../img/mockups/rebu-mockup.jpg);
 }
 
 .em {
-    background-image: url(../img/mockups/employee-mockup.png);
+    background-image: url(../img/mockups/employee-mockup.jpg);
 }
 
 .psm {
-    background-image: url(../img/mockups/phone-shop-mockup.png);
+    background-image: url(../img/mockups/phone-shop-mockup.jpg);
 }
 
 .tm {
-    background-image: url(../img/mockups/todo-mockup.png);
+    background-image: url(../img/mockups/todo-mockup.jpg);
 }
 
-.wam {
-    background-image: url(../img/mockups/weatherApp-mockup.png);
+.wm {
+    background-image: url(../img/mockups/weather-mockup.jpg);
 }
 
-.bbm {
-    background-image: url(../img/mockups/breaking-bad-mockup.png);
-}
-
-.fm {
-    background-image: url(../img/mockups/form-mockup.png);
+.bm {
+    background-image: url(../img/mockups/breaking-mockup.jpg);
 }
 
 .nm {
-    background-image: url(../img/mockups/nuno-mockup.png);
+    background-image: url(../img/mockups/nuno-mockup.jpg);
 }
 
 .sm {
-    background-image: url(../img/mockups/solufix-mockup.png);
-}
-
-.mtm {
-    background-image: url(../img/mockups/myTunes-mockup.png);
+    background-image: url(../img/mockups/solufix-mockup.jpg);
 }
 
 .om {
-    background-image: url(../img/mockups/omnipix-mockup.png);
+    background-image: url(../img/mockups/omnipix-mockup.jpg);
 }
 
 .projects-background {
