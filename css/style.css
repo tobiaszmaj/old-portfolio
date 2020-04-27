@@ -1794,14 +1794,14 @@ input[type="submit"] {
     width: 25%;
 }
 
-.progress-bar .bar.positive.purple {
-    background: #764ABC;
-    width: 15%;
+.progress-bar .bar.positive.pink {
+    background: #C66395;
+    width: 40%;
 }
 
-.progress-bar .bar.positive.red2 {
-    background: #CB3837;
-    width: 25%;
+.progress-bar .bar.positive.purple {
+    background: #7348B7;
+    width: 15%;
 }
 
 .progress-bar .bar.positive.blue2 {
@@ -1835,12 +1835,12 @@ input[type="submit"] {
     width: 75%;
 }
 
-.progress-bar .bar.negative.purple {
-    width: 85%;
+.progress-bar .bar.negative.pink {
+    width: 60%;
 }
 
-.progress-bar .bar.negative.red2 {
-    width: 75%;
+.progress-bar .bar.negative.purple {
+    width: 85%;
 }
 
 .progress-bar .bar.negative.blue2 {
