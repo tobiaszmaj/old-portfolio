@@ -1676,16 +1676,16 @@ input[type="submit"] {
     background-image: url(../img/mockups/rebu-mockup.jpg);
 }
 
-.em {
-    background-image: url(../img/mockups/employee-mockup.jpg);
+.tm {
+    background-image: url(../img/mockups/travel-slider-mockup.jpg);
 }
 
 .psm {
     background-image: url(../img/mockups/phone-shop-mockup.jpg);
 }
 
-.tm {
-    background-image: url(../img/mockups/todo-mockup.jpg);
+.em {
+    background-image: url(../img/mockups/rock-paper-scissors-mockup.jpg);
 }
 
 .wm {
@@ -1696,12 +1696,12 @@ input[type="submit"] {
     background-image: url(../img/mockups/breaking-mockup.jpg);
 }
 
-.nm {
-    background-image: url(../img/mockups/nuno-mockup.jpg);
+.cm {
+    background-image: url(../img/mockups/calculator-mockup.jpg);
 }
 
 .sm {
-    background-image: url(../img/mockups/solufix-mockup.jpg);
+    background-image: url(../img/mockups/shopping-cart-mockup.jpg);
 }
 
 .om {
