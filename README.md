@@ -1,6 +1,6 @@
 # Portfolio
 
-[Demo](https://tobiaszmaj.github.io/Portfolio/)
+### See [DEMO](https://tobiaszmaj.github.io/Portfolio/)
 
 ![Preview](preview.jpg)
 
