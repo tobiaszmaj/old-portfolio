@@ -1654,10 +1654,14 @@ input[type="submit"] {
 }
 
 .gallery {
-    margin-left: -10vw;
+    margin-left: -4vw;
     padding-bottom: 6.7em;
-    width: 100vw;
+    width: 95vw;
     display: flex;
+}
+
+.gallery img {
+    max-width: 31vw;
 }
 
 .projects .btn-align-center {
@@ -1672,8 +1676,8 @@ input[type="submit"] {
     background-image: url(../img/mockups/jivr-mockup.jpg);
 }
 
-.rm {
-    background-image: url(../img/mockups/rebu-mockup.jpg);
+.itm {
+    background-image: url(../img/mockups/itunes-top100-mockup.jpg);
 }
 
 .tm {
@@ -1696,8 +1700,8 @@ input[type="submit"] {
     background-image: url(../img/mockups/breaking-mockup.jpg);
 }
 
-.cm {
-    background-image: url(../img/mockups/calculator-mockup.jpg);
+.ssm {
+    background-image: url(../img/mockups/space-shooter-mockup.jpg);
 }
 
 .sm {
